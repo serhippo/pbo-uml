@@ -194,12 +194,59 @@
 		<h2 class="featurette-heading fw-normal lh-1 mt-0 text-center pb-4">Bagaimana contoh yang benar?</h2>
 		</div>
 		<div class="col-12 order-3">
-		<ol class="lead pt-4">
-			<li>Berapa banyak jumlah <span class="text-monospace">Post</span> minimal yang dapat dimiliki oleh <span class="text-monospace">User</span>?</li>
-			<li>Apakah <span class="text-monospace">Professional User</span>memiliki Attribute<span class="text-monospace">caption</span>?</li>
-			<li>Jika <span class="text-monospace">Post</span> dihapus, apa yang terjadi dengan <span class="text-monospace">User</span>?</li>
-			<li>Jika <span class="text-monospace">Story</span> dihapus, apa yang terjadi dengan <span class="text-monospace">Post</span>?</li>
-		</ol>
+		<p class="lead pt-4">Perhatikan contoh benar di atas:</p>
+		<!-- Accordion start -->		
+		<div class="accordion accordion-flush" id="accordionFlushExample">
+			<div class="accordion-item">
+			<h2 class="accordion-header" id="flush-heading-1">
+			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-1" aria-expanded="false" aria-controls="flush-collapse-1">
+				Berapa banyak jumlah <span class="text-monospace">Post</span> minimal yang dapat dimiliki oleh <span class="text-monospace">User</span>?
+			</button>
+			</h2>
+			<div id="flush-collapse-1" class="accordion-collapse collapse" aria-labelledby="flush-heading-1" data-bs-parent="#accordionFlushExample">
+			<div class="accordion-body">
+				Nol, terlihat dari Multiplicity yang lebih dekat ke <span class="text-monospace">User</span> pada Association antara <span class="text-monospace">Post</span> dan <span class="text-monospace">User</span>.
+			</div>
+			</div>
+			</div>
+			<div class="accordion-item">
+			<h2 class="accordion-header" id="flush-heading-2">
+			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-2" aria-expanded="false" aria-controls="flush-collapse-2">
+				Apakah <span class="text-monospace">Professional User</span> memiliki Attribute<span class="text-monospace">caption</span>?
+			</button>
+			</h2>
+			<div id="flush-collapse-2" class="accordion-collapse collapse" aria-labelledby="flush-heading-2" data-bs-parent="#accordionFlushExample">
+			<div class="accordion-body">
+				Tidak, <span class="text-monospace">Professional User</span> tidak memiliki Inheritance/Generalization dengan <span class="text-monospace">Post</span>, sehingga tidak memiliki Attribute milik <span class="text-monospace">Post</span>.
+			</div>
+			</div>
+			</div>
+			<div class="accordion-item">
+			<h2 class="accordion-header" id="flush-heading-3">
+			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-3" aria-expanded="false" aria-controls="flush-collapse-3">
+				Jika <span class="text-monospace">Post</span> dihapus, apa yang terjadi dengan <span class="text-monospace">User</span>?
+			</button>
+			</h2>
+			<div id="flush-collapse-3" class="accordion-collapse collapse" aria-labelledby="flush-heading-3" data-bs-parent="#accordionFlushExample">
+			<div class="accordion-body">
+				Tidak ada hal yang akan terjadi pada <span class="text-monospace">User</span> karena <span class="text-monospace">Post</span> hanya merupakan anak Class dari <span class="text-monospace">User</span>.
+			</div>
+			</div>
+			</div>
+			<div class="accordion-item">
+			<h2 class="accordion-header" id="flush-heading-4">
+			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-4" aria-expanded="false" aria-controls="flush-collapse-4">
+				Jika <span class="text-monospace">Story</span> dihapus, apa yang terjadi dengan <span class="text-monospace">Post</span>?
+			</button>
+			</h2>
+			<div id="flush-collapse-4" class="accordion-collapse collapse" aria-labelledby="flush-heading-4" data-bs-parent="#accordionFlushExample">
+			<div class="accordion-body">
+				Tidak ada hal yang akan terjadi pada <span class="text-monospace">Post</span> karena kedua Class ini tidak berhubungan langsung.
+			</div>
+			</div>
+			</div>
+		</div>
+		<!-- Accordion end-->
 		</div>
 		<div class="col-md-10 offset-md-1 d-flex">
 		<img src="./img/diagram-class-8.svg" class="featurette-image img-fluid mx-auto">
@@ -231,7 +278,7 @@
 
 	<div class="row featurette">
 		<div class="col-12">
-		<h2 class="featurette-heading fw-normal lh-1 mt-0 text-center">Tugas</h2>
+		<h2 class="featurette-heading fw-normal lh-1 mt-0 text-center pb-4">Tugas</h2>
 		<p class="lead">Buatlah Class Diagram berdasarkan topik dari dosen!</p>
 		</div>
 		<div class="col-md-6">
@@ -283,7 +330,23 @@
 	</div>
 
 	<hr class="featurette-divider">
+	
+	<div class="row featurette">
+		<div class="col-12">
+		<h2 class="featurette-heading fw-normal lh-1 mt-0 text-center pb-4">Referensi</h2>
+		</div>
+		<div class="col-12">
+		<ol class="lead">
+			<li>Pressman, Roger S. (2019). Software Engineering: A Practitioner’s Approach  9th Edition.  New York: McGraw-Hill Education</li>
+			<li>Object Management Group. (2015). Unified Modeling Language 2.5. <a href="https://www.omg.org/spec/UML/2.5/">https://www.omg.org/spec/UML/2.5/</a></li>
+			<li>Fakhroutdinov, Kirill. (2022). UML 2.5 Diagrams Overview. <a href="http://www.uml-diagrams.org/">http://www.uml-diagrams.org/</a></li>
 
+		</ol>
+		</div>
+	</div>
+	
+	<hr class="featurette-divider">
+	
 	<!-- /END THE FEATURETTES -->
 
 	</div><!-- /.container -->

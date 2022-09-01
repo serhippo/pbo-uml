@@ -144,7 +144,7 @@
 		<div class="col-md-7 d-flex flex-column justify-content-center">
 		<h2 class="featurette-heading fw-normal lh-1 mt-0">Apa itu Accept Event Action?</h2>
 		<p class="lead">Accept Event Action atau Trigger menyatakan kegiatan yang dapat terjadi kapanpun jika suatu syarat tercapai.</p>
-		<p class="lead">Accept Event Action digambarkan bendera.</p>
+		<p class="lead">Accept Event Action digambarkan dengan bendera.</p>
 		<p class="lead">Accept Event Action bersatu dengan alur kegiatan utama melalui sebuah Merge Node yang tidak memiliki Decision Node.</p>
 		</div>
 		<div class="col-md-5 d-flex">
@@ -160,12 +160,59 @@
 		<h2 class="featurette-heading fw-normal lh-1 mt-0 text-center pb-4">Bagaimana contoh yang benar?</h2>
 		</div>
 		<div class="col-12 order-3">
-		<ol class="lead pt-4">
-			<li>Diagram boleh disusun vertikal, horizontal, atau gabungan keduanya.</li>
-			<li>Apakah kegiatan yang dilakukan setelah user melakukan Logout?</li>
-			<li>Apakah <span class="text-monospace">Verifikasi Password</span> dan <span class="text-monospace">Verifikasi Username</span> adalah pilihan?</li>
-			<li>Mengapa Merge Node <span class="text-monospace">[Verifikasi gagal]</span> tidak berada setelah Decision Node-nya?</li>
-		</ol>
+		<p class="lead pt-4">Perhatikan contoh benar di atas:</p>
+		<!-- Accordion start -->		
+		<div class="accordion accordion-flush" id="accordionFlushExample">
+			<div class="accordion-item">
+			<h2 class="accordion-header" id="flush-heading-1">
+			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-1" aria-expanded="false" aria-controls="flush-collapse-1">
+				Apakah boleh menyusun diagram secara horizontal?
+			</button>
+			</h2>
+			<div id="flush-collapse-1" class="accordion-collapse collapse" aria-labelledby="flush-heading-1" data-bs-parent="#accordionFlushExample">
+			<div class="accordion-body">
+				Diagram boleh disusun vertikal, horizontal, atau gabungan keduanya.		
+			</div>
+			</div>
+			</div>
+			<div class="accordion-item">
+			<h2 class="accordion-header" id="flush-heading-2">
+			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-2" aria-expanded="false" aria-controls="flush-collapse-2">
+				Apakah kegiatan yang dilakukan setelah User melakukan Logout?	
+			</button>
+			</h2>
+			<div id="flush-collapse-2" class="accordion-collapse collapse" aria-labelledby="flush-heading-2" data-bs-parent="#accordionFlushExample">
+			<div class="accordion-body">
+				User dapat kembali melakukan Login.
+			</div>
+			</div>
+			</div>
+			<div class="accordion-item">
+			<h2 class="accordion-header" id="flush-heading-3">
+			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-3" aria-expanded="false" aria-controls="flush-collapse-3">
+				Apakah <span class="text-monospace">Verifikasi Password</span> dan <span class="text-monospace">Verifikasi Username</span> adalah pilihan?
+			</button>
+			</h2>
+			<div id="flush-collapse-3" class="accordion-collapse collapse" aria-labelledby="flush-heading-3" data-bs-parent="#accordionFlushExample">
+			<div class="accordion-body">
+				Tidak, <span class="text-monospace">Verifikasi Password</span> dan <span class="text-monospace">Verifikasi Username</span> terjadi bersamaan karena berada di dalam Fork dan Join Node.
+			</div>
+			</div>
+			</div>
+			<div class="accordion-item">
+			<h2 class="accordion-header" id="flush-heading-4">
+			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-4" aria-expanded="false" aria-controls="flush-collapse-4">
+				Mengapa Merge Node <span class="text-monospace">[Verifikasi gagal]</span> tidak berada setelah Decision Node-nya?
+			</button>
+			</h2>
+			<div id="flush-collapse-4" class="accordion-collapse collapse" aria-labelledby="flush-heading-4" data-bs-parent="#accordionFlushExample">
+			<div class="accordion-body">
+				Pada umumnya, jika terjadi kegagalan verifikasi data User, maka user akan diarahkan kebali ke halaman Login.
+			</div>
+			</div>
+			</div>
+		</div>
+		<!-- Accordion end-->
 		</div>
 		<div class="col-md-10 offset-md-1 d-flex">
 		<img src="./img/diagram-activity-6.svg" class="featurette-image img-fluid mx-auto">
@@ -202,7 +249,7 @@
 
 	<div class="row featurette">
 		<div class="col-12">
-		<h2 class="featurette-heading fw-normal lh-1 mt-0 text-center">Tugas</h2>
+		<h2 class="featurette-heading fw-normal lh-1 mt-0 text-center pb-4">Tugas</h2>
 		<p class="lead">Buatlah Activity Diagram berdasarkan topik dari dosen!</p>
 		</div>
 		<div class="col-md-6">
@@ -260,6 +307,22 @@
 
 	<hr class="featurette-divider">
 
+	<div class="row featurette">
+		<div class="col-12">
+		<h2 class="featurette-heading fw-normal lh-1 mt-0 text-center pb-4">Referensi</h2>
+		</div>
+		<div class="col-12">
+		<ol class="lead">
+			<li>Pressman, Roger S. (2019). Software Engineering: A Practitioner’s Approach  9th Edition.  New York: McGraw-Hill Education</li>
+			<li>Object Management Group. (2015). Unified Modeling Language 2.5. <a href="https://www.omg.org/spec/UML/2.5/">https://www.omg.org/spec/UML/2.5/</a></li>
+			<li>Fakhroutdinov, Kirill. (2022). UML 2.5 Diagrams Overview. <a href="http://www.uml-diagrams.org/">http://www.uml-diagrams.org/</a></li>
+
+		</ol>
+		</div>
+	</div>
+
+	<hr class="featurette-divider">
+	
 	<!-- /END THE FEATURETTES -->
 
 	</div><!-- /.container -->
