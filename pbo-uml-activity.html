@@ -71,6 +71,15 @@
 
 	<div class="container marketing">
 	
+	<div class="row featurette">		
+		<div class="col-12">
+		<h2 class="featurette-heading fw-normal lh-1 mt-0 text-center pb-4">Apa itu Activity Diagram?</h2>
+		<p class="lead">Activity Diagram digunakan untuk memodelkan perilaku dalam proses bisnis dan tidak bergantung pada objek. Diagram ini dapat digunakan untuk memodelkan kegiatan yang dilakukan Actor dalam satu atau lebih Use Case.</p>
+		<p class="lead">Elemen-elemen dari Activity Diagram Initial Node, Final Node, Activity, Activity Edgem, Fork Node, Join Node, Decision Node, Merge Node, dan Accept Event Action.</p>
+		</div>
+	</div>
+
+	<hr class="featurette-divider">
 
 	<div class="row featurette">
 		<div class="col-md-7 d-flex flex-column justify-content-center">
@@ -249,59 +258,74 @@
 
 	<div class="row featurette">
 		<div class="col-12">
-		<h2 class="featurette-heading fw-normal lh-1 mt-0 text-center pb-4">Tugas</h2>
-		<p class="lead">Buatlah Activity Diagram berdasarkan topik dari dosen!</p>
+		<h2 class="featurette-heading fw-normal lh-1 mt-0 text-center pb-4">Contoh Studi Kasus Pengerjaan</h2>
+		<!-- Accordion start -->		
+		<div class="accordion accordion-flush" id="accordionFlushExample">
+			<div class="accordion-item">
+			<h2 class="accordion-header" id="flush-heading-1">
+			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-1" aria-expanded="false" aria-controls="flush-collapse-1">
+				Studi Kasus Sistem Manajemen Hotel
+			</button>
+			</h2>
+			<div id="flush-collapse-1" class="accordion-collapse collapse" aria-labelledby="flush-heading-1" data-bs-parent="#accordionFlushExample">
+			<div class="accordion-body">
+				<p>Indonesian Deluxe Hotel for the Young merupakan hotel baru. Walaupun sudah cukup mapan, hotel ini berdedikasi untuk meningkatkan mutu pelayanannya. Oleh karena itu, pemilik hotel, Pak Tsumimura Hamero yang tahun ini berusia 69 tahun, berencana untuk mengadakan sebuah sistem informasi yang bisa membantu proses bisnisnya. Sistem ini nantinya diharapkan bisa membantu dalam menangani proses pengelolaan pelanggan, pengelolaan kamar, dan proses penyewaan kamar.</p>
+				<p>Proses penyewaan kamar meliputi check­in dan check-out. Proses pemesanan dan check-in dapat dilakukan melalui interaksi langsung antara pelanggan dan resepsionis. Resepsionis akan mengarahkan dan membantu pelanggan memasukkan data diri yang mencakup nama, nomor telepon yang dapat dihubungi, jam check-in, jam check-out, dan informasi pembayaran langsung melalui sistem. Demi keamanan, pembayaran tidak dapat dilakukan secara tunai. Setelah memasukkan data diri, pelanggan dapat melakukan pemesanan kamar dengan melakukan pencarian terhadap kamar yang masih tersedia. Pencarian ini juga mencantumkan harga kamar untuk mempermudah pembuatan keputusan. Jika pelanggan menyetujui kamar yang dipilih, maka pelanggan akan langsing membayar harga sewa. Pelanggan dapat memperpanjang jam check-out dengan melapor pada resepsionis dan melakukan perpanjangan melalui sistem minimal 2 jam sebelum checkout. Pembayaran akan dibebankan pada pelanggan berdasarkan informasi pembayaran.</p>
+				<p>Pelanggan dapat memesan room service kapanpun melalui sistem yang tersedia di kamar. Room service meliputi pemesanan makanan, pemesanan alat (seperti sikat gigi, odol, atau sabun), dan servis merapikan kamar. Pemesanan makanan memiliki biaya yang langsung dibebankan berdasarkan informasi pembayaran yang diberikan pelanggan.</p>
+				<p>Resepsionis melayani bantuan pemesanan melalui sistem dan pemeriksaan pembayaran. Apabila pembayaran sudah dilakukan maka resepsionis akan mengubah status kamar menjadi 'booked'. Resepsionis dapat membantu pelanggan mencari kamar yang sesuai jika pelanggan bingung untuk memilih kamar.</p> 
+				<p>Bagian Manajemen dapat memonitor kinerja bisnis untuk jangka waktu tertentu, seperti 1 hari, 1 minggu, 1 bulan, dan 1 tahun. Mereka menginginkan informasi jumlah penginap setiap hari, nomor kamar yang sering dipesan, dan tipe kamar yang dipesan.</p>
+				<p>Pak Tsumimura Hamero, orang Jepang yang berasal dari distrik Kabukichou di Tokyo, mengharapkan sistem yang ramah terhadap pengguna baru karena beliau tahu bahwa sistem yang rumit dapat mengakibatkan penurunan kinerja karyawan dan motivasi pelanggan. Beliau tidak akan menyetujui pembuatan sistem yang beliau anggap akan menyusahkan.</p>			
+			</div>
+			</div>
+			</div>
+			<div class="accordion-item">
+			<h2 class="accordion-header" id="flush-heading-2">
+			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-2" aria-expanded="false" aria-controls="flush-collapse-2">
+				Ada berapa aktor yang bisa Anda temukan?
+			</button>
+			</h2>
+			<div id="flush-collapse-2" class="accordion-collapse collapse" aria-labelledby="flush-heading-2" data-bs-parent="#accordionFlushExample">
+			<div class="accordion-body">
+				Ada 3 aktor utama: Tamu, Resepsionis, dan Manajemen.
+			</div>
+			</div>
+			</div>
+			<div class="accordion-item">
+			<h2 class="accordion-header" id="flush-heading-3">
+			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-3" aria-expanded="false" aria-controls="flush-collapse-3">
+				Apa sajakah Activity yang dilakukan Tamu pada Sistem Informasi ini?
+			</button>
+			</h2>
+			<div id="flush-collapse-3" class="accordion-collapse collapse" aria-labelledby="flush-heading-3" data-bs-parent="#accordionFlushExample">
+			<div class="accordion-body">
+				Berikut Aktivitas yang dapat dilakukan oleh Tamu:
+				<ul>
+				<li>Melakukan check-in</li>
+				<li>Melakukan check-out</li>
+				<li>Melihat informasi Kamar</li>
+				<li>Memesan room service</li>
+				<li>Mencari kamar</li>
+				<li>Melakukan booking</li>
+				<li>Melihat tagihan</li>
+				<li>Melakukan pembayaran</li>
+				</ul>	
+			</div>
+			</div>
+			</div>
+			<div class="accordion-item">
+			<h2 class="accordion-header" id="flush-heading-4">
+			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-4" aria-expanded="false" aria-controls="flush-collapse-4">
+				Bagaimanakah Activity Diagram untuk Tamu?
+			</button>
+			</h2>
+			<div id="flush-collapse-4" class="accordion-collapse collapse" aria-labelledby="flush-heading-4" data-bs-parent="#accordionFlushExample">
+			<div class="accordion-body">
+				<img src="./img/diagram-activity-8.svg" class="featurette-image img-fluid mx-auto">
+			</div>
+			</div>
+			</div>
 		</div>
-		<div class="col-md-6">
-		<p class="lead">Penambahan Nilai berdasarkan (maksimal 100):</p>
-		<ul class="lead">
-			<li>Ada 24 Activity yang benar: +15</li>
-			<li>Ada 48 Activity yang benar: +5</li>
-			<li>Ada 72 Activity yang benar: +5</li>
-			<li>Ada 96 Activity yang benar: +5</li>
-			<li>Ada 120 Activity yang benar: +5</li>
-			<li>Ada 240 Activity yang benar: +5</li>
-			<li>Ada 1 Fork Node berisi 8 Activity yang benar: +15</li>
-			<li>Ada 2 Fork Node yang masing-masing berisi 8 Activity yang benar: +5</li>
-			<li>Ada 4 Fork Node yang masing-masing berisi 8 Activity yang benar: +5</li>
-			<li>Ada 8 Fork Node yang masing-masing berisi 8 Activity yang benar: +5</li>
-			<li>Ada 16 Fork Node yang masing-masing berisi 8 Activity yang benar: +5</li>
-			<li>Ada 1 Decision Node berisi 8 Activity yang benar: +15</li>
-			<li>Ada 2 Decision Node yang masing-masing berisi 8 Activity yang benar: +5</li>
-			<li>Ada 4 Decision Node yang masing-masing berisi 8 Activity yang benar: +5</li>
-			<li>Ada 8 Decision Node yang masing-masing berisi8 Activity yang benar: +5</li>
-			<li>Ada 16 Fork Node yang masing-masing berisi 8 Activity yang benar: +5</li>
-			<li>Ada 1 aksi terima kejadian yang benar: +10</li>
-			<li>Ada 2 aksi terima kejadian yang benar: +5</li>
-			<li>Ada 4 aksi terima kejadian yang benar: +5</li>
-			<li>Ada 8 aksi terima kejadian yang benar: +5</li>
-			<li>Ada 16 aksi terima kejadian yang benar: +5</li>
-			<li>Ada 16 aksi terima kejadian yang benar: +5</li>
-		</ul>
-		</div>
-		<div class="col-md-6">
-		<p class="lead">Pengurangan Nilai berdasarkan:</p>
-		<ul class="lead">
-			<li>Ada lebih dari satu Activity Edge yang masuk ke sebuah Activity.</li>
-			<li>Ada lebih dari satu Activity Edge yang keluar dari sebuah Activity.</li>
-			<li>Hanya ada 1 kegiatan di aantara Fork Node dan Join Node.</li>
-			<li>Adanya Fork Node tanpa Join Node.</li>
-			<li>Adanya Decision Node tanpa Merge Node.</li>
-			<li>Adanya Decision Node tanpa syarat kondisi.</li>
-			<li>Accept Event Action tidak menyatu ke diagram utama.</li>
-			<li>Activity Edge tidak berupa garis panah.</li>
-			<li>Activity tidak berkelanjutan atau buntu.</li>
-			<li>Ada lebih dari satu Activity Edge menuju Final Node. Tidak sepenuhnya salah, tapi sebaiknya dihindari.</li>
-		</ul>
-		</div>
-		<div class="col-12 mt-4">
-		<p class="lead">Catatan:</p>
-		<ul class="lead">
-			<li>Penambahan Nilai maksimal adalah 100.
-			<li>Pengurangan Nilai pertama bernilai -30, selebihnya -5.</li>
-			<li>Nilai akhir adalah:  <span class="text-monospace">Penambahan Nilai - Pengurangan Nilai</span></li>
-			<li>Mahasiswa diizinkan merevisi tugas selama batas waktu pengumpulan dan revisi belum dilewati.</li>
-		</ul>
+		<!-- Accordion end-->
 		</div>
 	</div>
 
@@ -313,8 +337,8 @@
 		</div>
 		<div class="col-12">
 		<ol class="lead">
+			<li>Dennis, A., Wixom, B. H., &amp; Tegarden, D. (2015). <i>Systems analysis and design: An object-oriented approach with UML</i>. John Wiley & Sons.</li>
 			<li>Fakhroutdinov, Kirill. (2022). UML 2.5 Diagrams Overview. <a href="http://www.uml-diagrams.org/">http://www.uml-diagrams.org/</a></li>
-
 		</ol>
 		</div>
 	</div>
